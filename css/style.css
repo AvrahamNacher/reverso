@@ -18,12 +18,20 @@ body {
     padding-top: 100px;
 }
 
-.instructions p {
+.instructions {
+    position: relative;
+    left: inherit;
+}
+.instructions p:first-child {
     font-size: 2rem;
     line-height: 3.5rem;
     padding-top: 50px;
     padding-bottom: 20px;
+}
 
+.instructions p.small-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .numbers {
@@ -49,6 +57,7 @@ body {
 .button {
     height: 50px;
     width: 200px;
+    left: 9999px;
     background-color: teal;
     border-radius: 50vw;
     margin: auto;
@@ -73,14 +82,15 @@ body {
     line-height: 2.8rem;
 }
 
-.hide {
-    /* display: none; */
+.hideInstructions {
+    left: 9999px;
     opacity: 0.01;
     max-height: 0;
     transition: opacity 0.5s, max-height 0s 1s;
 }
 
-.show {
+.showButton {
+    left: inherit;
     opacity: 1;
     max-height: 999px;
     transition: opacity 0.5s, max-height 0s 1s;

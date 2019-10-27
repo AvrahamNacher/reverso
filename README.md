@@ -1,2 +1,4 @@
 # reverso
-number reversing game
+Number Reversing Game
+
+Play it here: https://avrahamnacher.github.io/reverso/
